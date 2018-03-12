@@ -1,96 +1,62 @@
 {
-  "v": "4.0",
-  "policies" : {
-    "create" : "perUser"
-  },
-  "workspace": {
-    "defaultEnv": "java",
-    "environments": [
-      {
-        "name": "java",
-        "machineConfigs": [
-          {
-            "limits": {
-              "ram": 1000
-            },
-            "name": "ws-machine",
-            "type": "docker",
-            "source": {
-              "location": "http://beta.codenvy.com/api/recipe/recipeb69bo9xp141dveu9/script",
-              "type": "recipe"
-            },
-            "dev": true
-          }
-        ]
-      }
-    ],
-    "projects": [
-      {
-        "links": [],
-        "name": "web-java-spring",
-        "attributes": {
-          "language": [
-            "java"
+  "name": "JSP",
+  "environments": {
+    "default": {
+      "machines": {
+        "db": {
+          "attributes": {
+            "memoryLimitBytes": "1073741824"
+          },
+          "servers": {},
+          "agents": [
+            "org.eclipse.che.terminal",
+            "org.eclipse.che.exec"
           ]
         },
-        "type": "maven",
-        "source": {
-          "location": "https://github.com/che-samples/web-java-spring.git",
-          "type": "git",
-          "parameters": {}
-        },
-        "modules": [],
-        "path": "/web-java-spring",
-        "problems": [],
-        "mixins": [
-          "git"
+        "dev-machine": {
+          "attributes": {
+            "memoryLimitBytes": "2147483648"
+          },
+          "servers": {},
+          "agents": [
+            "org.eclipse.che.ssh",
+            "org.eclipse.che.ws-agent",
+            "org.eclipse.che.terminal",
+            "org.eclipse.che.exec"
+          ]
+        }
+      },
+      "recipe": {
+        "type": "compose",
+        "content": "services:\n db:\n  image: eclipse/mysql\n  environment:\n   MYSQL_ROOT_PASSWORD: password\n   MYSQL_DATABASE: petclinic\n   MYSQL_USER: petclinic\n   MYSQL_PASSWORD: password\n  mem_limit: 1073741824\n dev-machine:\n  image: eclipse/ubuntu_jdk8\n  mem_limit: 2147483648\n  depends_on:\n   - db\n",
+        "contentType": "application/x-yaml"
+      }
+    }
+  },
+  "commands": [],
+  "projects": [
+    {
+      "name": "web",
+      "type": "blank",
+      "path": "/web",
+      "attributes": {
+        "contribute_to_branch": [
+          "master"
         ]
-      }
-    ],
-    "name": "java",
-    "attributes": {},
-    "commands": [
-      {
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war",
-        "name": "web-java-spring: build",
-        "attributes": {
-          "previewUrl": ""
-        },
-        "type": "mvn"
       },
-      {
-        "commandLine": "$TOMCAT_HOME/bin/catalina.sh run",
-        "name": "web-java-spring: run tomcat",
-        "attributes": {
-          "previewUrl": "http://${server.port.8080}"
-        },
-        "type": "custom"
+      "source": {
+        "location": "https://github.com/OsadchyRoman/web",
+        "type": "git",
+        "parameters": {}
       },
-      {
-        "commandLine": "$TOMCAT_HOME/bin/catalina.sh stop",
-        "name": "web-java-spring: stop tomcat",
-        "attributes": {
-          "previewUrl": ""
-        },
-        "type": "custom"
-      },
-      {
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run",
-        "name": "web-java-spring: build and run",
-        "attributes": {
-          "previewUrl": "http://${server.port.8080}"
-        },
-        "type": "mvn"
-      },
-      {
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh jpda run",
-        "name": "web-java-spring: debug",
-        "attributes": {
-          "previewUrl": "http://${server.port.8080}"
-        },
-        "type": "mvn"
-      }
-    ],
-    "links": []
-  }
+      "description": "",
+      "links": [],
+      "problems": [],
+      "mixins": [
+        "pullrequest"
+      ]
+    }
+  ],
+  "defaultEnv": "default",
+  "links": []
 }
