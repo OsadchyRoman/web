@@ -1,18 +1,7 @@
 {
-  "name": "JSP",
   "environments": {
     "default": {
       "machines": {
-        "db": {
-          "attributes": {
-            "memoryLimitBytes": "1073741824"
-          },
-          "servers": {},
-          "agents": [
-            "org.eclipse.che.terminal",
-            "org.eclipse.che.exec"
-          ]
-        },
         "dev-machine": {
           "attributes": {
             "memoryLimitBytes": "2147483648"
@@ -27,36 +16,49 @@
         }
       },
       "recipe": {
-        "type": "compose",
-        "content": "services:\n db:\n  image: eclipse/mysql\n  environment:\n   MYSQL_ROOT_PASSWORD: password\n   MYSQL_DATABASE: petclinic\n   MYSQL_USER: petclinic\n   MYSQL_PASSWORD: password\n  mem_limit: 1073741824\n dev-machine:\n  image: eclipse/ubuntu_jdk8\n  mem_limit: 2147483648\n  depends_on:\n   - db\n",
-        "contentType": "application/x-yaml"
+        "location": "eclipse/ubuntu_jdk8",
+        "type": "dockerimage"
       }
     }
   },
-  "commands": [],
+  "defaultEnv": "default",
   "projects": [
     {
+      "links": [],
       "name": "web",
-      "type": "blank",
-      "path": "/web",
       "attributes": {
         "contribute_to_branch": [
           "master"
+        ],
+        "commands": [
+          "{\"commandLine\":\"$TOMCAT_HOME/bin/catalina.sh run\", \"name\":\"Run tomcat\", \"attributes\":{\"previewUrl\":\"http://${server.port.8080}\", \"goal\":\"Run\"}, \"type\":\"custom\"}"
         ]
       },
+      "type": "blank",
       "source": {
         "location": "https://github.com/OsadchyRoman/web",
         "type": "git",
         "parameters": {}
       },
+      "path": "/web",
       "description": "",
-      "links": [],
       "problems": [],
       "mixins": [
         "pullrequest"
       ]
     }
   ],
-  "defaultEnv": "default",
+  "name": "JSP",
+  "commands": [
+    {
+      "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war",
+      "name": "Build war",
+      "attributes": {
+        "goal": "Build",
+        "previewUrl": ""
+      },
+      "type": "mvn"
+    }
+  ],
   "links": []
 }
