@@ -14,18 +14,6 @@
         <%=request.getParameter("s")!=null?"s="+request.getParameter("s"):"Введите параметр s в URL. Пример : dl.gsu.by/examples/getOneParam.jsp?s=5"%>
       </td>
     </tr>
-    <tr>
-      <td>Исходный код :</td>
-      <td><pre>
-&lt;%@ page contentType="text/html;charset=UTF-8" language="java"%&gt;
-&lt;html&gt
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;%=request.getParameter("s")!=null?"s="+request.getParameter("s"):"Введите параметр s в URL. Пример : dl.gsu.by/examples/getOneParam.jsp?s=5"%&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre></td>
-    </tr>
   </table>
   </body>
 </html>
