@@ -17,21 +17,6 @@
                 <%=string%>
             </td>
         </tr>
-        <tr>
-            <td>Исходный код :</td>
-            <td><pre>
-&lt;%@ page contentType="text/html;charset=UTF-8" language="java"%&gt;
-&lt;%
-  String string="Hello from JSP";
-%&gt;
-&lt;html&gt
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;%=string%&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre></td>
-        </tr>
-    </table>
+	</table>
 </body>
 </html>
