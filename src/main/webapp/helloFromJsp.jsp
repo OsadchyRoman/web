@@ -12,7 +12,7 @@
 <body>
     <table cols="2">
         <tr>
-            <td>Hello from JSP :</td>
+            <td>Hello from JSP  :</td>
             <td>
                 <%=string%>
             </td>
