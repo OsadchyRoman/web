@@ -1,4 +1,4 @@
-﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
