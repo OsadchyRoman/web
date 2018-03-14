@@ -9,7 +9,6 @@
   <body>
   <table cols="2">
     <tr>
-    <td>HELLO23423423423432432432432</td>
       <td>Результат работы :</td>
       <td>
         <%=request.getParameter("s")!=null?"s="+request.getParameter("s"):"Введите параметр s в URL. Пример : dl.gsu.by/examples/getOneParam.jsp?s=5"%>
