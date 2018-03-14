@@ -3,8 +3,7 @@
 <head>
 </head>
 <body>
-<jsp:include page="../homemenu.jsp" />
-<div align="center" style="text-align: left;">
+<div>
     <a href="getAllParam.jsp">Получение всех параметров из URL</a>
     <br>
     <a href="getOneParam.jsp">Получение конкретного параметра из URL</a>
