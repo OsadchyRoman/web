@@ -6,8 +6,8 @@
     <artifactId>web-java</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>SpringDemo</name>
+    <name>web-java</name>
     <build>
-        <finalName>java-web</finalName>
+        <finalName>web-java</finalName>
     </build>
 </project>
