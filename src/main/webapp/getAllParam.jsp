@@ -13,7 +13,7 @@
 <body>
    <table cols="2">
        <tr>
-           <td>Результат работы : </td>
+           <td>Результат работы :</td>
            <td>
                <%=(" ".equals(result))?"Введите параметры в URL":result%>
            </td>
