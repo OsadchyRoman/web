@@ -9,6 +9,8 @@
     <a href="getOneParam.jsp">Получение конкретного параметра из URL</a>
     <br>
     <a href="helloFromJsp.jsp">Вывод строки "Hello from JSP"</a>
+    <br>
+    <a href="getDate.jsp">Получение текущей даты</a>
 </div>
 </body>
 </html>
