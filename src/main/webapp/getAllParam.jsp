@@ -25,11 +25,6 @@
            <td>
                <%=(result.toString().isEmpty()) ? "Введите параметры в URL" : result%>
            </td>
-           <td><a href="" onclick="showhide('hint1'); return false;">Ответы на контрольные вопросы</a> <br><br>
-               <div id="hint1" style="display: none;">
-                   <strong>Что такое URL?</strong>
-                   URL (ЮРЛ) - это абревиатура, которая скрывает термин Universal Resource Locator. В переводе - универсальный указатель местоположения. По нему выходят на сервер, который служит хранилищем для нужного ресурса
-               </div></td>
        </tr>
    </table>
 </body>
