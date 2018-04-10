@@ -5,4 +5,12 @@
 
 <web-app>
    <display-name>For JSP application</display-name>
+   <servlet>
+      <servlet-name>ServletCode</servlet-name>
+      <servlet-class>ServletCode</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ServletCode</servlet-name>
+      <url-pattern>/javaSourceCode</url-pattern>
+   </servlet-mapping>
 </web-app>

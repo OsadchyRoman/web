@@ -6,7 +6,7 @@
 <div>
     <a href="getAllParam.jsp">Получение всех параметров из URL</a>
     <br>
-    <a href="getOneParam.jsp">Получение конкретного параметра из URL</a>
+    <a href="/javaSourceCode?nameJsp=getOneParam">Получение конкретного параметра из URL</a>
     <br>
     <a href="helloFromJsp.jsp">Вывод строки "Hello from JSP"</a>
     <br>
