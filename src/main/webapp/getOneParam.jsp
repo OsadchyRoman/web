@@ -9,7 +9,7 @@
     <tr>
       <td>Результат работы :</td>
       <td>
-        <%=request.getParameter("s")!=null?"s="+request.getParameter("s"):"Введите параметр s в URL. Пример : dl.gsu.by/servlet?nameJsp=getOneParam&s=5"%>
+        <%=request.getParameter("s")!=null?"s="+request.getParameter("s"):"Введите параметр s в URL. Пример : dl.gsu.by/javaSourceCode?nameJsp=getOneParam&s=5"%>
       </td>
     </tr>
     <tr>
