@@ -51,7 +51,7 @@
   "name": "JSP",
   "commands": [
     {
-      "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war",
+      "commandLine": "mvn -f ${current.project.path} clean package && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war",
       "name": "Build war",
       "attributes": {
         "goal": "Build",

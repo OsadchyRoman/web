@@ -17,16 +17,7 @@
     </tr>
     <tr>
         <td>Исходный код :</td>
-        <td><pre>
-&lt;%@ page contentType="text/html;charset=UTF-8" language="java"%&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Получение IP пользователя&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-   &lt;%=request.getRemoteAddr()%&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre></td>
+        <td></td>
     </tr>
 </table>
 </body>

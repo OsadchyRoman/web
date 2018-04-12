@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
   <head>
      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -15,7 +14,7 @@
     <tr>
       <td>Исходный код :</td>
       <td>
-          <button class="button-source"><a href="/sources/getOneParam.jsp">Показать в отдельном окне</a></button>
+          <button class="button-source"><a href="/sources/getOneParam.jsp"  target="_blank">Показать в отдельном окне</a></button>
       </td>
   </table>
   </body>
