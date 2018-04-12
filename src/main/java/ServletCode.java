@@ -13,7 +13,7 @@ public class ServletCode extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String uri = request.getRequestURI();
-        response.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        response.setContentType("text/plain; charset= utf-8");
         ServletOutputStream out = response.getOutputStream();
         try (InputStream is = getClass().getResourceAsStream(uri.substring(9, uri.length()))) {
             ByteStreams.copy(is, out);
