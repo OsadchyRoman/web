@@ -14,8 +14,13 @@
     <tr>
       <td>Исходный код :</td>
       <td>
-          <button class="button-source"><a href="/sources/getOneParam.jsp"  target="_blank">Показать в отдельном окне</a></button>
+          <iframe src="/sources/getOneParam.jsp" frameborder="1" width="1000" height="400"></iframe>
       </td>
+    </tr>
+      <tr>
+          <td></td>
+          <td><button class="button-source"><a href="/sources/getOneParam.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+      </tr>
   </table>
   </body>
 </html>

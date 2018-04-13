@@ -1,11 +1,10 @@
 @CHARSET "UTF-8";
 td {
-    vertical-align: top; 
+    vertical-align: top;
     text-align: left;
 }
 .button-source{
-    height: 45;
-    width: 120;
+
 }
 .button-source a{
     text-decoration: none;
