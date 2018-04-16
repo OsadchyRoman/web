@@ -1,3 +1,9 @@
+function getById(id) {
+    if (document.getElementById)
+        return document.getElementById(id);
+    else
+        return document.all[id];
+}
 function showhide(el, show) {
     if (!(typeof el == 'object'))
         el = getById(el);
