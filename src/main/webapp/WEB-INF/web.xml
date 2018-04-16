@@ -7,7 +7,7 @@
     <display-name>For JSP application</display-name>
     <servlet>
         <servlet-name>ServletCode</servlet-name>
-        <servlet-class>by.gsu.servlets.course.jsp.ServletCode</servlet-class>
+        <servlet-class>by.gsu.servlets.ServletCode</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletCode</servlet-name>
@@ -17,7 +17,7 @@
     <!-- Servlet for 'Servlet Course' -->
     <servlet>
         <servlet-name>servlet-course-greeting</servlet-name>
-        <servlet-class>by.gsu.servlets.course.servlet.GreetServlet</servlet-class>
+        <servlet-class>by.gsu.servlets.GreetServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servlet-course-greeting</servlet-name>
@@ -26,7 +26,7 @@
 
     <servlet>
         <servlet-name>servlet-course-person-info</servlet-name>
-        <servlet-class>by.gsu.servlets.course.servlet.PersonInfoServlet</servlet-class>
+        <servlet-class>by.gsu.servlets.PersonInfoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servlet-course-person-info</servlet-name>
@@ -35,7 +35,7 @@
 
     <servlet>
         <servlet-name>servlet-course-all-parameters</servlet-name>
-        <servlet-class>by.gsu.servlets.course.servlet.UrlParametersServlet</servlet-class>
+        <servlet-class>by.gsu.servlets.UrlParametersServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servlet-course-all-parameters</servlet-name>

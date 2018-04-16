@@ -1,4 +1,4 @@
-package by.gsu.servlets.course.jsp;
+package by.gsu.servlets;
 
 import com.google.common.io.ByteStreams;
 
@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.nio.charset.StandardCharsets;
 
 public class ServletCode extends HttpServlet {
 
@@ -17,7 +16,9 @@ public class ServletCode extends HttpServlet {
         String uri = request.getRequestURI();
         response.setContentType("text/plain; charset= utf-8");
         ServletOutputStream out = response.getOutputStream();
-        try (InputStream is = getClass().getResourceAsStream(uri.substring(9, uri.length()))) {
+        try (InputStream is = getClass()
+                .getClassLoader()
+                .getResourceAsStream(uri.substring(9, uri.length()))) {
             ByteStreams.copy(is, out);
         } catch (Exception e) {
             e.printStackTrace(new PrintStream(out));

@@ -1,21 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <style>
-        table{
-            margin: auto;
-            text-align: left;
-            margin-top: 20;
-
-        }
-        td{
-            vertical-align: top;
-        }
-        h3{
-            font-size : 21;
-        }
-
-    </style>
+    <title>Servlet Course</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
 <div align="center">

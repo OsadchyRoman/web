@@ -1,4 +1,4 @@
-package by.gsu.servlets.course.servlet;
+package by.gsu.servlets;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
