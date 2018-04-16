@@ -15,7 +15,7 @@
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
    <table cols="2">

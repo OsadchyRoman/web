@@ -1,15 +1,44 @@
-<!DOCTYPE web-app PUBLIC
-        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        version="3.0">
     <display-name>For JSP application</display-name>
     <servlet>
         <servlet-name>ServletCode</servlet-name>
-        <servlet-class>ServletCode</servlet-class>
+        <servlet-class>by.gsu.servlets.course.jsp.ServletCode</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletCode</servlet-name>
         <url-pattern>/sources/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for 'Servlet Course' -->
+    <servlet>
+        <servlet-name>servlet-course-greeting</servlet-name>
+        <servlet-class>by.gsu.servlets.course.servlet.GreetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-course-greeting</servlet-name>
+        <url-pattern>/servletcourse/helloWorld.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-course-person-info</servlet-name>
+        <servlet-class>by.gsu.servlets.course.servlet.PersonInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-course-person-info</servlet-name>
+        <url-pattern>/servletcourse/sendForm.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-course-all-parameters</servlet-name>
+        <servlet-class>by.gsu.servlets.course.servlet.UrlParametersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-course-all-parameters</servlet-name>
+        <url-pattern>/servletcourse/allParameters.jsp</url-pattern>
     </servlet-mapping>
 </web-app>
