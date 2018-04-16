@@ -18,6 +18,8 @@
                 <a href="getDate.jsp">Получение текущей даты</a>
                 <br>
                 <a href="getIp.jsp">Получение IP пользователя</a>
+                <br>
+                <a href="actionInclude.jsp">Jsp включение(jsp:include)</a>
             </td>
             <td>
                 <h3>Полезные ссылки</h3>
