@@ -41,4 +41,13 @@
         <servlet-name>servlet-course-all-parameters</servlet-name>
         <url-pattern>/servletcourse/allParameters.jsp</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-course-increment</servlet-name>
+        <servlet-class>by.gsu.servlets.IncrementServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-course-increment</servlet-name>
+        <url-pattern>/servletcourse/increment.jsp</url-pattern>
+    </servlet-mapping>
 </web-app>

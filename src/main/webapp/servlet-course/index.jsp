@@ -14,6 +14,7 @@
             <h3>Полезные примеры по Servlet</h3>
             <a href="/servletcourse/helloWorld.jsp">Servlet для приветствия</a> <br/>
             <a href="/servletcourse/allParameters.jsp">Подсчет длины параметров в URL</a> <br/>
+            <a href="/servletcourse/increment.jsp">Increment</a> <br/>
             <a href="/servlet-course/sendForm.jsp">Отправка формы</a> <br/>
         </td>
         <td>
