@@ -1,3 +1,5 @@
+package by.gsu.servlets;
+
 import com.google.common.io.ByteStreams;
 
 import javax.servlet.ServletOutputStream;
@@ -15,7 +17,9 @@ public class ServletCode extends HttpServlet {
         String uri = request.getRequestURI();
         response.setContentType("text/plain; charset= utf-8");
         ServletOutputStream out = response.getOutputStream();
-        try (InputStream is = getClass().getResourceAsStream(uri.substring(uri.lastIndexOf("sources/")+8, uri.length()))) {
+        try (InputStream is = getClass()
+                .getClassLoader()
+                .getResourceAsStream(uri.substring(uri.lastIndexOf("sources/")+8, uri.length()))) {
             ByteStreams.copy(is, out);
         } catch (Exception e) {
             e.printStackTrace(new PrintStream(out));

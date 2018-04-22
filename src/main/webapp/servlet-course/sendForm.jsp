@@ -9,7 +9,7 @@
 <body>
 <table cols="2">
     <tr>
-        <td><p>Ответ сервлета:</p></td>
+        <td><p>Результат работы:</p></td>
         <td><p>
             <c:choose>
                 <c:when test="${empty greeting}">
@@ -52,13 +52,21 @@
 
     <tr><td><br></td></tr>
     <tr>
-        <td><p>PersonInfoServlet.java: </p></td>
+        <td><p>Исходный код (PersonInfoServlet.java): </p></td>
         <td><iframe src="/sources/by/gsu/servlets/PersonInfoServlet.java" frameborder="1" width="1000" height="400"></iframe></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button class="button-source"><a href="/sources/by/gsu/servlets/PersonInfoServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
     <tr>
-        <td><p>sendForm.jsp: </p></td>
+        <td><p>Исходный код (sendForm.jsp): </p></td>
         <td><iframe src="/sources/servlet-course/sendForm.jsp" frameborder="1" width="1000" height="400"></iframe></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button class="button-source"><a href="/sources/servlet-course/sendForm.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
 </table>

@@ -9,14 +9,14 @@
 <body>
 <table cols="2">
     <tr>
-        <td><p>Ответ сервлета:</p></td>
+        <td><p>Результат работы:</p></td>
         <td><p>
             <c:choose>
                 <c:when test="${empty result}">
                     Введите параметры в URL. <br/>
                     <c:set var = "server" value="${pageContext.request.serverName}" />
                     <c:set var = "port" value="${pageContext.request.serverPort}" />
-                    Пример : ${server}:${port}/servletcourse/allParameters.jsp?i=Roman&mother=Anna&father=Misha
+                    Пример : dl.gsu.by/servletcourse/allParameters.jsp?i=Roman&mother=Anna&father=Misha
                 </c:when>
                 <c:otherwise>
                     <ul>
@@ -42,15 +42,23 @@
 
     <tr><td><br></td></tr>
     <tr>
-        <td><p>UrlParametersServlet.java: </p></td>
+        <td><p>Исходный код (UrlParametersServlet.java): </p></td>
         <td>
             <iframe src="/sources/by/gsu/servlets/UrlParametersServlet.java" frameborder="1" width="1000" height="400"></iframe>
         </td>
     </tr>
+    <tr>
+        <td></td>
+        <td><button class="button-source"><a href="/sources/by/gsu/servlets/UrlParametersServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
+    </tr>
     <tr><td><br></td></tr>
     <tr>
-        <td><p>allParameters.jsp: </p></td>
+        <td><p>Исходный код (allParameters.jsp): </p></td>
         <td><iframe src="/sources/servlet-course/allParameters.jsp" frameborder="1" width="1000" height="400"></iframe></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button class="button-source"><a href="/sources/servlet-course/allParameters.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
 </table>

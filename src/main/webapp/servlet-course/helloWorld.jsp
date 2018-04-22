@@ -9,7 +9,7 @@
 <body>
 <table cols="2">
     <tr>
-        <td><p>Ответ сервлета:</p></td>
+        <td><p>Результат работы:</p></td>
         <td><p>
             <c:choose>
                 <c:when test="${empty greeting}">
@@ -17,7 +17,7 @@
                     Пример :
                     <c:set var = "server" value="${pageContext.request.serverName}" />
                     <c:set var = "port" value="${pageContext.request.serverPort}" />
-                    ${server}:${port}/servletcourse/helloWorld.jsp?name=Vova
+                    dl.gsu.by/servletcourse/helloWorld.jsp?name=Vova
                 </c:when>
                 <c:otherwise>
                     <c:out value = "${greeting}"/>
@@ -37,13 +37,21 @@
 
     <tr><td><br></td></tr>
     <tr>
-        <td><p>GreetServlet.java: </p></td>
+        <td><p>Исходный код (GreetServlet.java): </p></td>
         <td><iframe src="/sources/by/gsu/servlets/GreetServlet.java" frameborder="1" width="1000" height="400"></iframe></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button class="button-source"><a href="/sources/by/gsu/servlets/GreetServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
     <tr>
-        <td><p>helloWorld.jsp: </p></td>
+        <td><p>Исходный код (helloWorld.jsp): </p></td>
         <td><iframe src="/sources/servlet-course/helloWorld.jsp" frameborder="1" width="1000" height="400"></iframe></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button class="button-source"><a href="/sources/servlet-course/helloWorld.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
 </table>
