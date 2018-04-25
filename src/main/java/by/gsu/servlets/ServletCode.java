@@ -14,7 +14,6 @@ import java.io.PrintStream;
 public class ServletCode extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        //fdfd
         String uri = request.getRequestURI();
         response.setContentType("text/plain; charset= utf-8");
         ServletOutputStream out = response.getOutputStream();
