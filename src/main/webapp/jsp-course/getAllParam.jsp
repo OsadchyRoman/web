@@ -28,12 +28,12 @@
     <tr>
     <td>Исходный код :</td>
     <td>
-        <iframe src="/sources/jsp-course/getAllParam.jsp" frameborder="1" width="1000" height="400"></iframe>
+        <iframe src="<%=request.getContextPath()%>/sources/jsp-course/getAllParam.jsp" frameborder="1" width="1000" height="400"></iframe>
     </td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/jsp-course/getAllParam.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="<%=request.getContextPath()%>/sources/jsp-course/getAllParam.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr>
         <td>Контрольные вопросы:</td>

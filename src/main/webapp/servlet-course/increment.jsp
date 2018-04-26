@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
+<c:set var="context" value="${pageContext.request.contextPath}" />
 <table cols="2">
     <tr>
         <td><p>Результат работы:</p></td>
@@ -31,21 +32,21 @@
     <tr>
         <td><p>Исходный код (IncrementServlet.java): </p></td>
         <td>
-            <iframe src="/sources/by/gsu/servlets/IncrementServlet.java" frameborder="1" width="1000" height="400"></iframe>
+            <iframe src="${context}/sources/by/gsu/servlets/IncrementServlet.java" frameborder="1" width="1000" height="400"></iframe>
         </td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/by/gsu/servlets/IncrementServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/by/gsu/servlets/IncrementServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
     <tr>
         <td><p>Исходный код (increment.jsp): </p></td>
-        <td><iframe src="/sources/servlet-course/increment.jsp" frameborder="1" width="1000" height="400"></iframe></td>
+        <td><iframe src="${context}/sources/servlet-course/increment.jsp" frameborder="1" width="1000" height="400"></iframe></td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/servlet-course/increment.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/servlet-course/increment.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
 </table>

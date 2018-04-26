@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
+<c:set var="context" value="${pageContext.request.contextPath}" />
 <table cols="2">
     <tr>
         <td><p>Результат работы:</p></td>
@@ -27,7 +28,7 @@
         <td><p>Форма для отправки:</p></td>
         <td>
             <p>
-            <form method="post" action="/servletcourse/sendForm.jsp"
+            <form method="post" action="${context}/servletcourse/sendForm.jsp"
                   style="padding: 10px; border: 1px solid black; width: 175px;">
                 <label for="firstName">First Name:</label> <br/>
                 <input id="firstName" name="firstName"/> <br/>
@@ -53,20 +54,20 @@
     <tr><td><br></td></tr>
     <tr>
         <td><p>Исходный код (PersonInfoServlet.java): </p></td>
-        <td><iframe src="/sources/by/gsu/servlets/PersonInfoServlet.java" frameborder="1" width="1000" height="400"></iframe></td>
+        <td><iframe src="${context}/sources/by/gsu/servlets/PersonInfoServlet.java" frameborder="1" width="1000" height="400"></iframe></td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/by/gsu/servlets/PersonInfoServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/by/gsu/servlets/PersonInfoServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
     <tr>
         <td><p>Исходный код (sendForm.jsp): </p></td>
-        <td><iframe src="/sources/servlet-course/sendForm.jsp" frameborder="1" width="1000" height="400"></iframe></td>
+        <td><iframe src="${context}/sources/servlet-course/sendForm.jsp" frameborder="1" width="1000" height="400"></iframe></td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/servlet-course/sendForm.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/servlet-course/sendForm.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
 </table>

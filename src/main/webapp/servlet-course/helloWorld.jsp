@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
+<c:set var="context" value="${pageContext.request.contextPath}" />
 <table cols="2">
     <tr>
         <td><p>Результат работы:</p></td>
@@ -15,9 +16,7 @@
                 <c:when test="${empty greeting}">
                     Введите параметр 'name' в URL. <br/>
                     Пример :
-                    <c:set var = "server" value="${pageContext.request.serverName}" />
-                    <c:set var = "port" value="${pageContext.request.serverPort}" />
-                    dl.gsu.by/servletcourse/helloWorld.jsp?name=Vova
+                    dl.gsu.by${context}/servletcourse/helloWorld.jsp?name=Vova
                 </c:when>
                 <c:otherwise>
                     <c:out value = "${greeting}"/>
@@ -38,20 +37,20 @@
     <tr><td><br></td></tr>
     <tr>
         <td><p>Исходный код (GreetServlet.java): </p></td>
-        <td><iframe src="/sources/by/gsu/servlets/GreetServlet.java" frameborder="1" width="1000" height="400"></iframe></td>
+        <td><iframe src="${context}/sources/by/gsu/servlets/GreetServlet.java" frameborder="1" width="1000" height="400"></iframe></td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/by/gsu/servlets/GreetServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/by/gsu/servlets/GreetServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
     <tr>
         <td><p>Исходный код (helloWorld.jsp): </p></td>
-        <td><iframe src="/sources/servlet-course/helloWorld.jsp" frameborder="1" width="1000" height="400"></iframe></td>
+        <td><iframe src="${context}/sources/servlet-course/helloWorld.jsp" frameborder="1" width="1000" height="400"></iframe></td>
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="/sources/servlet-course/helloWorld.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/servlet-course/helloWorld.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
 </table>
