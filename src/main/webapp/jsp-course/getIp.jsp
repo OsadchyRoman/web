@@ -2,13 +2,19 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+    <script src="https://unpkg.com/kotlin-playground@1" data-selector=".kotlin-code"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
 <table cols="2">
     <tr>
         <td>Результат работы :</td>
         <td>
-            <%=request.getRemoteAddr()%>
+            <%=
+            //sampleStart
+                    request.getRemoteAddr()
+            //sampleEnd
+            %>
         </td>
     </tr>
     <tr>
@@ -18,7 +24,20 @@
     <tr>
         <td>Исходный код :</td>
         <td>
-            <iframe src="<%=request.getContextPath()%>/sources/jsp-course/getIp.jsp" frameborder="1" width="1000" height="400"></iframe>
+            <div class="kotlin-code" data-highlight-only folded-button="true">
+                <pre>
+                    <code class="hljs language-text" id="ajaxDiv">
+                        <script type="text/javascript">
+                            $.ajax({
+                                url: "<%=request.getContextPath()%>/sources/jsp-course/getIp.jsp",
+                                success: function(data){
+                                    $("#ajaxDiv").text(data);
+                                }
+                            });
+                        </script>
+                    </code>
+                </pre>
+            </div>
         </td>
     </tr>
     <tr>
