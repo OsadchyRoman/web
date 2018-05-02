@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>All parameters</title>
+    <script type="text/javascript" src="../resources/javascript/task.js"></script>
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
