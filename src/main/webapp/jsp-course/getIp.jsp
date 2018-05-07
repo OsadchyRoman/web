@@ -42,7 +42,9 @@
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="<%=request.getContextPath()%>/sources/jsp-course/getIp.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="<%=request.getContextPath()%>/sources/jsp-course/getIp.jsp"  target="_blank">Показать в отдельной вкладке</a></button>
+            <button class="button-source"><a href="http://confluence.newit.gsu.by/pages/viewpage.action?pageId=35586072"  target="_blank">Теория</a></button>
+        </td>
     </tr>
 </table>
 </body>

@@ -15,8 +15,8 @@
         <td>
             <%
                 //sampleStart
-                Date dateNow=new Date();
-                SimpleDateFormat formatForDateNow=new SimpleDateFormat("'Текущая дата 'yyyy.MM.dd 'и время' hh:mm:ss ");
+                Date dateNow = new Date();
+                SimpleDateFormat formatForDateNow = new SimpleDateFormat("'Текущая дата 'yyyy.MM.dd 'и время' hh:mm:ss ");
                 out.println(formatForDateNow.format(dateNow));
                 //sampleEnd
             %>
@@ -43,20 +43,9 @@
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="<%=request.getContextPath()%>/sources/jsp-course/getDate.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
-    </tr>
-    <tr>
-        <td>Контрольные вопросы:</td>
-        <td class="sizeTd">
-            <p>Как комментировать код в JSP?</p>
-            <a href="" onclick="showhide('hint1'); return false;">Ответы</a><br><br>
-            <div id="hint1" style="display: none;">
-                <strong>Как комментировать код в JSP?</strong>
-                <p>
-                    HTML комментарии — &lt;-- HTML Comment --&gt;. Такие комментарии будут видны клиенту при просмотре кода страницы.<br>
-                    JSP комментарии — &lt;%-- JSP Comment --%&gt;. Такие комментарии создаются в созданном сервлете и не посылаются клиенту. Для любых комментариев по коду или отладочной информации необходимо использовать этот тип комментариев.
-                </p>
-            </div>
+        <td>
+            <button class="button-source"><a href="<%=request.getContextPath()%>/sources/jsp-course/getDate.jsp"  target="_blank">Показать в отдельной вкладке</a></button>
+            <button class="button-source"><a href="http://confluence.newit.gsu.by/pages/viewpage.action?pageId=35586070"  target="_blank">Теория</a></button>
         </td>
     </tr>
 </table>

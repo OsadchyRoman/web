@@ -13,6 +13,7 @@
         <filter-name>header</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
     <servlet>
         <servlet-name>ServletCode</servlet-name>
         <servlet-class>by.gsu.servlets.ServletCode</servlet-class>
@@ -20,6 +21,15 @@
     <servlet-mapping>
         <servlet-name>ServletCode</servlet-name>
         <url-pattern>/sources/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>by.gsu.servlets.jspCourse.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/testServlet</url-pattern>
     </servlet-mapping>
 
     <!-- Servlet for 'Servlet Course' -->
