@@ -16,7 +16,7 @@ public class PersonInfoServlet extends HttpServlet {
 
         String greeting = null;
         if (firstName != null && lastName != null) {
-            greeting = "Hello, " + firstName + " " + lastName +"!";
+            greeting = "Hello, " + firstName + " " + lastName + "!";
         }
         request.setAttribute("greeting", greeting);
 

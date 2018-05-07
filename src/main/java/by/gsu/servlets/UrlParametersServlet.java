@@ -12,16 +12,12 @@ import java.util.Map;
 public class UrlParametersServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         Map<String, Integer> result = new HashMap<>();
         Map<String, String[]> params = request.getParameterMap();
-        // calculate length of each parameter
         for (Map.Entry<String, String[]> entry : params.entrySet()) {
             result.put(entry.getValue()[0], entry.getValue()[0].length());
         }
-
         request.setAttribute("result", result);
-
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/servlet-course/allParameters.jsp");
         dispatcher.forward(request,response);
     }

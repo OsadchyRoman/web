@@ -23,7 +23,6 @@ public class IncrementServlet extends HttpServlet {
 
     private void toDo(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
-
         result ++;
 
         request.setAttribute("result", result);

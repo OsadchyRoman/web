@@ -11,11 +11,15 @@
         <!-- Servlet course -->
         <td>
             <!-- Examples -->
-            <h3>Полезные примеры по Servlet</h3>
+            <h3>HTTP</h3>
             <a href="<%=request.getContextPath()%>/servletcourse/helloWorld.jsp">Servlet для приветствия</a> <br/>
-            <a href="<%=request.getContextPath()%>/servletcourse/allParameters.jsp">Подсчет длины параметров в URL</a> <br/>
-            <a href="<%=request.getContextPath()%>/servletcourse/increment.jsp">Increment</a> <br/>
+            <a href="<%=request.getContextPath()%>/servletcourse/allParameters.jsp">Подсчет длины параметров из URL</a> <br/>
+
+            <h3>Работа с формой</h3>
+            <a href="<%=request.getContextPath()%>/servletcourse/increment.jsp">Кликер</a> <br/>
             <a href="<%=request.getContextPath()%>/servlet-course/sendForm.jsp">Отправка формы</a> <br/>
+            <a href="<%=request.getContextPath()%>/servlet-course/chooseColor.jsp">Выбираем цвет приветствия</a> <br/>
+            <a href="<%=request.getContextPath()%>/servlet-course/stringWork.jsp">Изучаем элементы - манипуляции со строкой</a> <br/>
         </td>
         <td>
             <!-- Links -->

@@ -58,4 +58,22 @@
         <servlet-name>servlet-course-increment</servlet-name>
         <url-pattern>/servletcourse/increment.jsp</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-course-choose-color</servlet-name>
+        <servlet-class>by.gsu.servlets.ChooseColorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-course-choose-color</servlet-name>
+        <url-pattern>/servletcourse/chooseColor.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-course-string-work</servlet-name>
+        <servlet-class>by.gsu.servlets.StringWorkerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-course-string-work</servlet-name>
+        <url-pattern>/servletcourse/stringWork.jsp</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -14,3 +14,10 @@ function showhide(el, show) {
     el.style.display = (show ? 'block' : 'none');
     return el.style.display;
 }
+
+var codeLoad = function(url, element) {
+    $.ajax({ url: url, cache : false})
+        .done(function(response) {
+            $(element).text(response);
+        });
+};

@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Send form</title>
+    <title>Choose color</title>
     <script type="text/javascript" src="../resources/javascript/task.js"></script>
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
     <script src="https://unpkg.com/kotlin-playground@1" data-selector=".kotlin-code"></script>
@@ -17,10 +17,10 @@
         <td><p>
             <c:choose>
                 <c:when test="${empty greeting}">
-                   <span style="color: red;"> Заполните и отправте форму ниже, пожалуйста! </span>
+                    <span style="color: red;"> Введите свое имя и цвет на <strong> английском языке </strong>, пожалуйста! </span>
                 </c:when>
                 <c:otherwise>
-                    <span style="color: green;"> <c:out value = "${greeting}"/> </span>
+                    <strong style="color: ${color}"> ${greeting} </strong>
                 </c:otherwise>
             </c:choose>
 
@@ -32,15 +32,15 @@
         <td>
             <p>
             <%//sampleStart %>
-            <form method="post" action="${context}/servletcourse/sendForm.jsp"
+            <form method="post" action="${context}/servletcourse/chooseColor.jsp"
                   style="padding: 10px; border: 1px solid black; width: 175px;">
-                <label for="firstName">First Name:</label> <br/>
-                <input id="firstName" name="firstName"/> <br/>
+                <label for="color">Введите любой цвет:</label> <br/>
+                <input id="color" name="color"/> <br/>
 
-                <label for="lastName">Last Name:</label> <br/>
-                <input id="lastName" name="lastName"/> <br/>
+                <label for="name">Введите свое имя:</label> <br/>
+                <input id="name" name="name"/> <br/>
                 <br/>
-                <input type="submit" value="Send">
+                <input type="submit" value="Отправить">
             </form>
             <%//sampleEnd %>
         </td>
@@ -49,15 +49,15 @@
     <tr>
         <td><p>Условие:</p></td>
         <td><p>
-            Описан сервлет, который будет приветствовать пользователя. На вход сервлет будет принимать форму,
-            с заполненными полями name, age.
+            Описан сервлет, который будет выводить ваше имя в указанном цвете. На вход сервлет будет принимать форму,
+            с заполненными полями color, name.
             И отвечать приветствием на переданную форму.
         </p></td>
     </tr>
 
     <tr><td><br></td></tr>
     <tr>
-        <td><p>Исходный код (PersonInfoServlet.java): </p></td>
+        <td><p>Исходный код (ChooseColorServlet.java): </p></td>
         <td>
             <div class="kotlin-code" data-highlight-only folded-button="true">
                 <pre>
@@ -69,11 +69,11 @@
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="${context}/sources/by/gsu/servlets/PersonInfoServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/by/gsu/servlets/ChooseColorServlet.java"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
     <tr><td><br></td></tr>
     <tr>
-        <td><p>Исходный код (sendForm.jsp): </p></td>
+        <td><p>Исходный код (chooseColor.jsp): </p></td>
         <td>
             <div class="kotlin-code" data-highlight-only folded-button="true">
                 <pre>
@@ -85,16 +85,16 @@
     </tr>
     <tr>
         <td></td>
-        <td><button class="button-source"><a href="${context}/sources/servlet-course/sendForm.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
+        <td><button class="button-source"><a href="${context}/sources/servlet-course/chooseColor.jsp"  target="_blank">Показать в отдельной вкладке</a></button></td>
     </tr>
 </table>
-    <script>
-        $( document ).ready(function() {
-            codeLoad("${context}/sources/by/gsu/servlets/PersonInfoServlet.java",
-                $("#javaCode"));
-            codeLoad("${context}/sources/servlet-course/sendForm.jsp",
-                $("#jspCode"));
-        });
-    </script>
+<script>
+    $( document ).ready(function() {
+        codeLoad("${context}/sources/by/gsu/servlets/ChooseColorServlet.java",
+            $("#javaCode"));
+        codeLoad("${context}/sources/servlet-course/chooseColor.jsp",
+            $("#jspCode"));
+    });
+</script>
 </body>
 </html>
