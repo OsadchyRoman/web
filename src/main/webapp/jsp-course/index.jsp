@@ -20,7 +20,7 @@
                 <br>
                 <a href="actionForward.jsp">Jsp forward(jsp:forward)</a>
                 <br>
-                <a href="actionForward.jsp">Jsp text(jsp:text)</a>
+                <a href="actionText.jsp">Jsp text(jsp:text)</a>
                 <h3>HTTP</h3>
                 <a href="headerRequest.jsp">HTTP Header Request</a>
                 <br>
