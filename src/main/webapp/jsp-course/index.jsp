@@ -8,19 +8,21 @@
     <table class="index-table">
         <tr>
             <td>
-                <h3>РџРѕР»РµР·РЅС‹Рµ РїСЂРёРјРµСЂС‹</h3>
-                <a href="helloFromJsp.jsp">Р’С‹РІРѕРґ СЃС‚СЂРѕРєРё "Hello from JSP"</a>
+                <h3>Полезные примеры</h3>
+                <a href="helloFromJsp.jsp">Вывод строки "Hello from JSP"</a>
                 <br>
-                <a href="getDate.jsp">РџРѕР»СѓС‡РµРЅРёРµ С‚РµРєСѓС‰РµР№ РґР°С‚С‹</a>
+                <a href="getDate.jsp">Получение текущей даты</a>
                 <br>
                 <h3>JSP action</h3>
-                <a href="actionInclude.jsp">Jsp РІРєР»СЋС‡РµРЅРёРµ(jsp:include)</a>
+                <a href="actionInclude.jsp">Jsp включение(jsp:include)</a>
                 <br>
                 <a href="actionUseBean.jsp">Jsp useBean(jsp:useBean, jsp:setProperty, jsp:getProperty)</a>
                 <br>
                 <a href="actionForward.jsp">Jsp forward(jsp:forward)</a>
                 <br>
                 <a href="actionText.jsp">Jsp text(jsp:text)</a>
+                <br>
+                <a href="actionElement.jsp">Jsp element(jsp:element)</a>
                 <h3>HTTP</h3>
                 <a href="headerRequest.jsp">HTTP Header Request</a>
                 <br>
@@ -28,41 +30,51 @@
                 <br>
                 <a href="forStatusCode.jsp">HTTP Status Codes</a>
                 <br>
-                <a href="getOneParam.jsp">РџРѕР»СѓС‡РµРЅРёРµ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ РїР°СЂР°РјРµС‚СЂР° РёР· URL</a>
+                <a href="getOneParam.jsp">Получение конкретного параметра из URL</a>
                 <br>
-                <a href="getAllParam.jsp">РџРѕР»СѓС‡РµРЅРёРµ РІСЃРµС… РїР°СЂР°РјРµС‚СЂРѕРІ РёР· URL</a>
+                <a href="getAllParam.jsp">Получение всех параметров из URL</a>
                 <br>
-                <a href="getIp.jsp">РџРѕР»СѓС‡РµРЅРёРµ IP РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ</a>
+                <a href="getIp.jsp">Получение IP пользователя</a>
+                <br>
+                <a href="forSendRedirect.jsp">Redirect</a>
+                <br>
+                <a href="getScheme.jsp">Получение протокола</a>
+                <br>
+                <a href="getPort.jsp">Получение порта сервера</a>
                 <h3>HTML</h3>
-                <a href="getMethod.jsp">РћР±СЂР°Р±РѕС‚РєР° С„РѕСЂРјС‹ РјРµС‚РѕРґ Get</a>
+                <a href="getMethod.jsp">Обработка формы метод Get</a>
                 <br>
-                <a href="postMethod.jsp">РћР±СЂР°Р±РѕС‚РєР° С„РѕСЂРјС‹ РјРµС‚РѕРґ Post</a>
+                <a href="postMethod.jsp">Обработка формы метод Post</a>
                 <br>
-                <a href="checkbox.jsp">РџРµСЂРµРґР°С‡Р° С„Р»Р°Р¶РєРѕРІ</a>
+                <a href="checkbox.jsp">Передача флажков</a>
                 <br>
-                <a href="readingAllParam.jsp">Р§С‚РµРЅРёРµ РІСЃРµС… РїР°СЂР°РјРµС‚СЂРѕРІ С„РѕСЂРјС‹ </a>
+                <a href="readingAllParam.jsp">Чтение всех параметров формы </a>
+                <br>
+                <a href="radiobutton.jsp">Передача кнопки </a>
+                <br>
+                <a href="getAttribute.jsp">Установка и просмотр атрибутов </a>
                 <h3>Cookies</h3>
-                <a href="forCookies.jsp">РЈСЃС‚Р°РЅРѕРІРєР° cookies</a>
+                <a href="forCookies.jsp">Установка cookies</a>
                 <br>
-                <a href="readingCookies.jsp">Р§С‚РµРЅРёРµ cookies</a>
+                <a href="readingCookies.jsp">Чтение cookies</a>
             </td>
             <td>
-                <h3>РџРѕР»РµР·РЅС‹Рµ СЃСЃС‹Р»РєРё</h3>
-                <a href="https://studfiles.net/preview/1029766/">Р’РІРµРґРµРЅРёРµ РІ JSP РґР»СЏ РЅРѕРІРёС‡РєРѕРІ</a>
+                <h3>Полезные ссылки</h3>
+                <a href="https://studfiles.net/preview/1029766/">Введение в JSP для новичков</a>
                 <br>
-                <a href="http://orlova.rsue.ru/content/sst/j2ee2.htm">РџСЂРёРјРµСЂС‹ СЂР°Р·СЂР°Р±РѕС‚РєРё JSP СЃС‚СЂР°РЅРёС†</a>
+                <a href="http://orlova.rsue.ru/content/sst/j2ee2.htm">Примеры разработки JSP страниц</a>
                 <br>
-                <a href="http://www.java2ee.ru/jsp/syntax.html">РЎРёРЅС‚Р°РєСЃРёСЃ JSP</a>
+                <a href="http://www.java2ee.ru/jsp/syntax.html">Синтаксис JSP</a>
                 <br>
-                <a href="http://javastudy.ru/interview/jee-jsp-questions-answers/">Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹ РЅР° С‚РµРјСѓ JSP</a>
+                <a href="http://javastudy.ru/interview/jee-jsp-questions-answers/">Вопросы и ответы на тему JSP</a>
                 <br>
-                <a href="http://it-channel.ru/2016/02/29/install-tomcat/">РЈСЃС‚Р°РЅРѕРІРєР° Tomcat Рё РёРЅС‚РµРіСЂР°С†РёСЏ СЃ Intellij Idea</a>
+                <a href="http://it-channel.ru/2016/02/29/install-tomcat/">Установка Tomcat и интеграция с Intellij Idea</a>
                 <br>
                 <a href="https://www.tutorialspoint.com/jsp/index.htm">JSP Tutorial</a>
                 <br>
-                <a href="https://github.com/OsadchyRoman/web">РџСЂРѕРµРєС‚ СЃ РїСЂРёРјРµСЂР°РјРё РЅР° github.com</a>
-                <h3>РЎСЂРµРґР° СЂР°Р·СЂР°Р±РѕС‚РєРё</h3>
-                <a href="http://confluence.newit.gsu.by//x/HwAaAg">РЎСЂРµРґР° СЂР°Р·СЂР°Р±РѕС‚РєРё РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№</a>
+                <a href="https://github.com/OsadchyRoman/web">Проект с примерами на github.com</a>
+                <h3>Среда разработки</h3>
+                <a href="http://confluence.newit.gsu.by//x/HwAaAg">Среда разработки для пользователей</a>
             </td>
         </tr>
     </table>
