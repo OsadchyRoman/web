@@ -18,6 +18,7 @@
     <div class="center">
         <a href="jsp-course/index.jsp">JSP course (Roman Osadchy)</a> <br/>
         <a href="servlet-course/index.jsp">Servlet course (Roman Hizhanok)</a>
+        <a href="jsp-course/index1.jsp">JSP example (Pavel Vychikov)</a>
     </div>
 </body>
 </html>
