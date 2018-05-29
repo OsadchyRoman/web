@@ -33,6 +33,10 @@
                 <a href="getAllParam.jsp">Получение всех параметров из URL</a>
                 <br>
                 <a href="getIp.jsp">Получение IP пользователя</a>
+                <br>
+                <a href="getServerName.jsp">Получение имени сервера,принявшего запрос</a>
+                <br>
+                <a href="getProtocol.jsp">Получение названия и версии протокола</a>
                 <h3>HTML</h3>
                 <a href="getMethod.jsp">Обработка формы метод Get</a>
                 <br>
@@ -41,10 +45,15 @@
                 <a href="checkbox.jsp">Передача флажков</a>
                 <br>
                 <a href="readingAllParam.jsp">Чтение всех параметров формы </a>
+                <br>
+                <a href="font.jsp">Установка значения атрибута "size" для тега "font"</a>
                 <h3>Cookies</h3>
                 <a href="forCookies.jsp">Установка cookies</a>
                 <br>
                 <a href="readingCookies.jsp">Чтение cookies</a>
+                <h3>Session</h3>
+                <a href="session.jsp">Чтение session</a>
+
             </td>
             <td>
                 <h3>Полезные ссылки</h3>
