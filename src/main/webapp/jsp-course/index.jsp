@@ -21,6 +21,8 @@
                 <a href="actionForward.jsp">Jsp forward(jsp:forward)</a>
                 <br>
                 <a href="actionText.jsp">Jsp text(jsp:text)</a>
+                <br>
+                <a href="actionElement.jsp">Jsp element(jsp:element)</a>
                 <h3>HTTP</h3>
                 <a href="headerRequest.jsp">HTTP Header Request</a>
                 <br>
@@ -34,9 +36,15 @@
                 <br>
                 <a href="getIp.jsp">Получение IP пользователя</a>
                 <br>
+                <a href="forSendRedirect.jsp">Redirect</a>
+                <br>
+                <a href="getScheme.jsp">Получение протокола</a>
+                <br>
+                <a href="getPort.jsp">Получение порта сервера</a>
+                <br>
                 <a href="getServerName.jsp">Получение имени сервера,принявшего запрос</a>
                 <br>
-                <a href="getProtocol.jsp">Получение названия и версии протокола</a>
+                 <a href="getProtocol.jsp">Получение названия и версии протокола</a>
                 <h3>HTML</h3>
                 <a href="getMethod.jsp">Обработка формы метод Get</a>
                 <br>
@@ -46,14 +54,17 @@
                 <br>
                 <a href="readingAllParam.jsp">Чтение всех параметров формы </a>
                 <br>
-                <a href="font.jsp">Установка значения атрибута "size" для тега "font"</a>
+                <a href="radiobutton.jsp">Передача кнопки </a>
+                <br>
+                 <a href="font.jsp">Установка значения атрибута "size" для тега "font"</a>
+                <br>
+                <a href="getAttribute.jsp">Установка и просмотр атрибутов </a>
                 <h3>Cookies</h3>
                 <a href="forCookies.jsp">Установка cookies</a>
                 <br>
                 <a href="readingCookies.jsp">Чтение cookies</a>
-                <h3>Session</h3>
+                 <h3>Session</h3>
                 <a href="session.jsp">Чтение session</a>
-
             </td>
             <td>
                 <h3>Полезные ссылки</h3>
