@@ -21,6 +21,8 @@
                 <a href="actionForward.jsp">Jsp forward(jsp:forward)</a>
                 <br>
                 <a href="actionText.jsp">Jsp text(jsp:text)</a>
+                <br>
+                <a href="actionElement.jsp">Jsp element(jsp:element)</a>
                 <h3>HTTP</h3>
                 <a href="headerRequest.jsp">HTTP Header Request</a>
                 <br>
@@ -33,6 +35,12 @@
                 <a href="getAllParam.jsp">Получение всех параметров из URL</a>
                 <br>
                 <a href="getIp.jsp">Получение IP пользователя</a>
+                <br>
+                <a href="forSendRedirect.jsp">Redirect</a>
+                <br>
+                <a href="getScheme.jsp">Получение протокола</a>
+                <br>
+                <a href="getPort.jsp">Получение порта сервера</a>
                 <h3>HTML</h3>
                 <a href="getMethod.jsp">Обработка формы метод Get</a>
                 <br>
@@ -41,6 +49,10 @@
                 <a href="checkbox.jsp">Передача флажков</a>
                 <br>
                 <a href="readingAllParam.jsp">Чтение всех параметров формы </a>
+                <br>
+                <a href="radiobutton.jsp">Передача кнопки </a>
+                <br>
+                <a href="getAttribute.jsp">Установка и просмотр атрибутов </a>
                 <h3>Cookies</h3>
                 <a href="forCookies.jsp">Установка cookies</a>
                 <br>
