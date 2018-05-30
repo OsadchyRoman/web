@@ -41,6 +41,10 @@
                 <a href="getScheme.jsp">Получение протокола</a>
                 <br>
                 <a href="getPort.jsp">Получение порта сервера</a>
+                <br>
+                <a href="getServerName.jsp">Получение имени сервера,принявшего запрос</a>
+                <br>
+                 <a href="getProtocol.jsp">Получение названия и версии протокола</a>
                 <h3>HTML</h3>
                 <a href="getMethod.jsp">Обработка формы метод Get</a>
                 <br>
@@ -53,10 +57,14 @@
                 <a href="radiobutton.jsp">Передача кнопки </a>
                 <br>
                 <a href="getAttribute.jsp">Установка и просмотр атрибутов </a>
+                <br>
+                <a href="font.jsp">Установка значения атрибута "size" для тега "font"</a>
                 <h3>Cookies</h3>
                 <a href="forCookies.jsp">Установка cookies</a>
                 <br>
                 <a href="readingCookies.jsp">Чтение cookies</a>
+                <h3>Session</h3>
+                <a href="session.jsp">Чтение session</a>
             </td>
             <td>
                 <h3>Полезные ссылки</h3>
